@@ -1,0 +1,234 @@
+:root{
+    --color1: black;
+    --color2: #202327;
+    --color3: #65696e;
+    --color4: #e7e9ea;
+    --color5: rgba(255, 255, 255, 0.03);
+    --color6: #1DA1F2;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+/* Search Box Start */
+#search-con{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--color2);
+}
+
+#search-con svg{
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: var(--color3);
+}
+
+#search-con input{
+    padding: 1rem;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--color3);
+    font-size: 1.2rem;
+}
+/* Search Box End */
+
+/* What's Happening Box Start  */
+#what-happening{
+    margin: 0;
+    width: max-content;
+    background-color: var(--color2);
+    border-radius: 50px;
+}
+
+#what-happening .trends-con > div{
+    background-color: var(--color2);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#what-happening h2{
+    margin: 0;
+    padding: 2rem 6rem 2rem 2rem;
+    color: var(--color4);
+}
+
+#what-happening .trends div{
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#what-happening .trends div p, #what-happening .trends p:last-child{
+    margin: 0;
+    padding: 0;
+    color: var(--color3);
+    font-size: 0.8rem;
+}
+
+#what-happening .trends div svg{
+    margin-right: 1.5rem;
+    width: 1.2rem;
+    height: 2rem;
+    fill: var(--color3);
+    transition: background-color 0.2s;
+}
+
+#what-happening .trends div + p{
+    margin: 0;
+    padding: 0;
+    color: var(--color4);
+}
+
+.trends{
+    margin: 0;
+    cursor: pointer;
+    padding-left: 2rem;
+    padding-bottom: 0.6rem;
+    transition: background-color 0.2s;
+}
+
+#what-happening a{
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0 1.5rem 2rem;
+    background-color: var(--color2);
+    display: block;
+    text-decoration: none;
+    color: var(--color6);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: background-color 0.2s;
+}
+
+                                /* Hover part Start */
+.trends:hover{
+    background-color: var(--color5);
+}
+
+#what-happening a:hover{
+    background-color: var(--color5);
+}
+
+#what-happening .trends div svg:hover{
+    fill: var(--color6);
+    background-color: rgba(29, 161, 242, 0.08);
+    border-radius: 50%;
+    height: auto;
+}
+                                            /* Hover part Start */
+/* What's Happening Box End  */
+
+
+/* Who to follow part start   */
+#who-to-follow{
+    width: max-content;
+    border-radius: 50px;
+    background-color: var(--color2);
+}
+
+#who-to-follow h2{
+    padding: 0;
+    margin: 0;
+    padding: 1.8rem 0 1rem 2rem;
+    color: var(--color4);
+}
+
+
+#who-to-follow #wtf-container > div{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transition: background-color 0.2s;
+}   
+
+#who-to-follow #wtf-container > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#who-to-follow #wtf-container > div > div > img{
+    padding: 0;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}   
+
+#who-to-follow #wtf-container > div > div > div{
+    padding: 0.8rem;
+}
+
+#who-to-follow #wtf-container > div > div > div p:first-child{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color4);
+}   
+#who-to-follow #wtf-container > div > div > div p:last-child{
+    margin: 0;
+    padding: 0;
+    color: var(--color3);
+}  
+
+#who-to-follow a{
+    margin: 0;
+    padding: 1rem 0 1.5rem 2rem;
+    background-color: var(--color2);
+    display: block;
+    text-decoration: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color6);
+    transition: background-color 0.2s;
+}
+
+#who-to-follow #wtf-container > div button{
+    padding: 0.4rem 0.8rem;
+    margin: 0;
+    border-radius: 50px;
+    color: var(--color2);
+    font-weight: 600;
+}
+
+
+#who-to-follow #wtf-container > div > div > div p:first-child svg{
+    padding-left: 0.2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color6);
+}
+
+                                /* Hover part Start */
+
+#who-to-follow #wtf-container > div:hover{
+    background-color: var(--color5);
+}
+
+#who-to-follow a:hover{
+    background-color: var(--color5);
+}                
+/* Who to follow part End   */
